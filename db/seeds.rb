@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do |index|
+  Article.create!(title: Faker::StarWars.quote,
+                        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quo deleniti alias porro, iusto cupiditate, facere quod, tenetur consequuntur expedita,
+                        qui dolorum temporibus obcaecati magnam delectus fugit necessitatibus assumenda ex recusandae.")
+end
+
